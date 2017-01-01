@@ -22,7 +22,6 @@
 		5615E0231E17B33900427359 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5615E0221E17B33900427359 /* MessageComposer.swift */; };
 		564CBA741E19197800E2CDDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564CBA731E19197800E2CDDB /* Constants.swift */; };
 		5672DC141E18094A0083F50E /* MessageSentDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DC131E18094A0083F50E /* MessageSentDelegator.swift */; };
-		5672DC161E18FEB20083F50E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5672DC151E18FEB20083F50E /* README.md */; };
 		5672DC2C1E19118A0083F50E /* SWBCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5672DC231E19118A0083F50E /* SWBCommon.framework */; };
 		5672DC331E19118A0083F50E /* SWBCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672DC321E19118A0083F50E /* SWBCommonTests.swift */; };
 		5672DC351E19118A0083F50E /* SWBCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5672DC251E19118A0083F50E /* SWBCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -578,7 +577,6 @@
 			files = (
 				5615E0111E17AD0D00427359 /* ShareViewController.swift in Sources */,
 				5672DC141E18094A0083F50E /* MessageSentDelegator.swift in Sources */,
-				5672DC161E18FEB20083F50E /* README.md in Sources */,
 				5615E0231E17B33900427359 /* MessageComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -881,6 +879,7 @@
 		5672DC3B1E19118A0083F50E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -905,6 +904,7 @@
 		5672DC3C1E19118A0083F50E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
