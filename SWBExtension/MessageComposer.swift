@@ -11,8 +11,8 @@ import MobileCoreServices
 import MessageUI
 import SWBCommon
 
-let attachableContentTypes = [kUTTypeImage, kUTTypeInternetLocation, kUTTypeVideo, kUTTypeVCard]
-let textContentTypes = [kUTTypeURL, kUTTypePlainText, kUTTypeText]
+let attachableContentTypes = [kUTTypeImage, kUTTypeInternetLocation, kUTTypeAudiovisualContent, kUTTypeVCard, kUTTypeCalendarEvent, kUTTypeMessage]
+let textContentTypes = [kUTTypeURL, kUTTypeText]
 
 class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
     open var sentDelegator: MessageSentDelegator? = nil

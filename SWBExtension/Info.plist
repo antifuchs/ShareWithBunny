@@ -25,7 +25,22 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>TRUEPREDICATE</string>
+			<string>SUBQUERY (
+    extensionItems,
+    $extensionItem,
+    SUBQUERY (
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.image&quot; ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.apple.internet-location&quot; ||        
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.audiovisual-content&quot; ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.vcard&quot; ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.calendar-event&quot; ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.message&quot; ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.url&quot; ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.text&quot;
+    ).@count &gt; 0
+).@count == 1</string>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>
