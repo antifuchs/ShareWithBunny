@@ -11,10 +11,12 @@ import MobileCoreServices
 import MessageUI
 import SWBCommon
 
-let attachableContentTypes = [kUTTypeImage, kUTTypeInternetLocation, kUTTypeVideo]
+let attachableContentTypes = [kUTTypeImage, kUTTypeInternetLocation, kUTTypeVideo, kUTTypeVCard]
+let textContentTypes = [kUTTypeURL, kUTTypePlainText, kUTTypeText]
 
 class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
     open var sentDelegator: MessageSentDelegator? = nil
+    var firstAttachment = true
     
     func canSendText() -> Bool {
         return MFMessageComposeViewController.canSendText()
@@ -39,25 +41,45 @@ class MessageComposer: NSObject, MFMessageComposeViewControllerDelegate {
     }
     
     func addAttachment(attachment: NSItemProvider, controller: MFMessageComposeViewController, execute: @escaping ()->()) {
-        if attachment.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-            attachment.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil) { data, error in
-                let url = data as! NSURL
-                controller.addAttachmentURL(url as URL, withAlternateFilename: nil)
+        // print(attachment.registeredTypeIdentifiers)
+        if let type =  attachmentContentType(attachment, fromTypes: attachableContentTypes) {
+            attachment.loadItem(forTypeIdentifier: type, options: nil) { data, error in
+                if let url = data as? NSURL {
+                    controller.addAttachmentURL(url as URL, withAlternateFilename: nil)
+                } else if let nsdata = data as? Data {
+                    // TODO: filename is wrong, but it doesn't seem to matter.
+                    controller.addAttachmentData(nsdata, typeIdentifier: type, filename: "bunny-content.data")
+                }
                 execute()
             }
-        } else if attachment.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
-            var first = true
-            attachment.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil) { data, error in
-                let url = data as! NSURL
-                let urlText = (url.absoluteString)!
-                if !first {
+        } else if let type = attachmentContentType(attachment, fromTypes: textContentTypes) {
+            attachment.loadItem(forTypeIdentifier: type, options: nil) { data, error in
+                var text = ""
+                if let url = data as? NSURL {
+                    text = (url.absoluteString)!
+                } else {
+                    text = data as! String
+                }
+                if !self.firstAttachment {
                     controller.body?.append("\n")
                 }
-                controller.body?.append(urlText)
-                first = false
+                self.firstAttachment = false
+                controller.body?.append(text)
             }
             execute()
+        } else {
+            // TODO: We should handle all possible content types, but fall through for now.
+            execute()
         }
+    }
+    
+    func attachmentContentType(_ attachment: NSItemProvider, fromTypes: [CFString]) -> String? {
+        for type in fromTypes {
+            if attachment.hasItemConformingToTypeIdentifier(type as String) {
+                return type as String
+            }
+        }
+        return nil
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
