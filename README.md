@@ -26,3 +26,4 @@ This is my very very first iOS program, and my very very first Swift program. I 
 * emojione for the bunny icon: http://emojione.com/developers/
 * How to pop up the message compose UI: https://www.appcoda.com/ios-programming-send-sms-text-message/
 * Selecting contacts' coordinates from the address book: https://www.shinobicontrols.com/blog/ios9-day-by-day-day7-contacts-framework
+* Extension scenarios: https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html
