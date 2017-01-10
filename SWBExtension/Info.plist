@@ -31,14 +31,14 @@
     SUBQUERY (
         $extensionItem.attachments,
         $attachment,
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.image&quot; ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.apple.internet-location&quot; ||        
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.audiovisual-content&quot; ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.vcard&quot; ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.calendar-event&quot; ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.message&quot; ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.url&quot; ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.text&quot;
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.apple.internet-location" ||        
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.audiovisual-content" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.vcard" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.calendar-event" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.message" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.text"
     ).@count &gt; 0
 ).@count == 1</string>
 		</dict>

@@ -10,4 +10,4 @@ public enum SWBPreferences: String {
     case SBBunnyProp = "SBTheBunny"
 }
 
-public let SWBPreferenceGroup = "group.net.boinkor.ShareWithBunny"
+public let SWBPreferenceGroup = "group.net.boinkor.ios.ShareWithBunny"
