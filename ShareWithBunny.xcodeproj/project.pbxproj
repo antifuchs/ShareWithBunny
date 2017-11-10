@@ -439,13 +439,13 @@
 					};
 					5615DFEC1E17ACCE00427359 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = WUS6DPS6H5;
+						DevelopmentTeam = 3FRWMDJ7HC;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5615DFD81E17ACCE00427359;
 					};
 					5615DFF71E17ACCE00427359 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = WUS6DPS6H5;
+						DevelopmentTeam = 3FRWMDJ7HC;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5615DFD81E17ACCE00427359;
 					};
@@ -461,13 +461,13 @@
 					};
 					5672DC221E19118A0083F50E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4G59QCN3ZY;
+						DevelopmentTeam = 3FRWMDJ7HC;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5672DC2A1E19118A0083F50E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = WUS6DPS6H5;
+						DevelopmentTeam = 3FRWMDJ7HC;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5615DFD81E17ACCE00427359;
 					};
@@ -795,7 +795,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = WUS6DPS6H5;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				INFOPLIST_FILE = ShareWithBunnyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.boinkor.ShareWithBunnyTests;
@@ -810,7 +810,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = WUS6DPS6H5;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				INFOPLIST_FILE = ShareWithBunnyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.boinkor.ShareWithBunnyTests;
@@ -824,7 +824,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = WUS6DPS6H5;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				INFOPLIST_FILE = ShareWithBunnyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.boinkor.ShareWithBunnyUITests;
@@ -838,7 +838,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = WUS6DPS6H5;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				INFOPLIST_FILE = ShareWithBunnyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.boinkor.ShareWithBunnyUITests;
@@ -884,7 +884,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4G59QCN3ZY;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -909,7 +909,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4G59QCN3ZY;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -929,7 +929,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = WUS6DPS6H5;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				INFOPLIST_FILE = SWBCommonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.boinkor.SWBCommonTests;
@@ -943,7 +943,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = WUS6DPS6H5;
+				DEVELOPMENT_TEAM = 3FRWMDJ7HC;
 				INFOPLIST_FILE = SWBCommonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.boinkor.SWBCommonTests;
