@@ -2,6 +2,12 @@ This directory contains assets from across the internet; I have used
 these to lighten up the appearance of ShareWithBunny. Thanks to all
 creators!!
 
+# Converting the AppIcon asset to PNG files
+
+1. Install `svgexport`: `npm install -g svgexport`
+2. run `make` in this directory.
+3. Open `./output` and drag all the PNG files to their place in the AppIcon section.
+
 # Attribution for EmojiOne assets
 
 [1f430.svg](1f430.svg) is a copy of

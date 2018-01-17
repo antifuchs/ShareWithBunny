@@ -1,0 +1,22 @@
+[
+  {
+    "input": ["1f430.svg"],
+    "output": [
+      ["output/swb-29.png", "29:29"],
+      ["output/swb-29@2x.png", "58:58"],
+      ["output/swb-40@2x.png", "80:80"],
+      ["output/swb-57.png", "57:57"],
+      ["output/swb-57@2x.png", "114:114"],
+      ["output/swb-60@2x.png", "120:120"],
+      ["output/swb-40.png", "40:40"],
+      ["output/swb-50.png", "50:50"],
+      ["output/swb-50@2x.png", "100:100"],
+      ["output/swb-72.png", "72:72"],
+      ["output/swb-72@2x.png", "144:144"],
+      ["output/swb-76.png", "76:76"],
+      ["output/swb-76@2x.png", "152:152"],
+      ["output/swb-512.png", "512:512"],
+      ["output/swb-1024.png", "1024:1024"]
+    ]
+  }
+]
